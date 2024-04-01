@@ -1,0 +1,87 @@
+@media (width >= 768px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .brends__swiper.-non-slider .swiper-wrapper {
+        transform: inherit!important;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(224px, 1fr));  
+        gap: 16px 24px;                                         
+    }
+    .brends__swiper.-non-slider .swiper-slide {
+        width: inherit!important;                     
+    }
+    .brends__swiper.-non-slider .swiper-slide-duplicate {
+        display: none;
+    }
+
+    .brends__swiper {
+        height: 160px;
+        overflow: hidden;
+        margin: 24px 0;
+    }
+
+    .swiper-slide:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .swiper-slide::after {
+        content: "";
+        background: url(../images/go.svg) no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
+    .brends__viewButton[hidden] {
+        line-height: 24px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+
+    .brends__viewButton::before {
+        content: "";
+        background: url(../images/arrows.svg) no-repeat;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Стили после нажатия кнопки "Показать все" */
+    .brends--hide .brends__swiper {
+        height: auto;
+        overflow: visible;
+        margin-bottom: 46px;
+    }
+
+    .brends--hide .brends__viewButton[hidden] {
+        padding-bottom: 14px;
+    }
+
+    .brends--hide .brends__viewButton::before {
+        content: "";
+        background: url(../images/arrows.svg) no-repeat;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+        rotate: 180deg;
+    }
+}
+
+
+@media (width >= 1120px) {
+    .container {
+        padding: 0 32px;
+    }
+    
+    .brends__swiper.-non-slider .swiper-wrapper {
+        grid-template-columns: repeat(4, minmax(240px, 1fr));
+        column-gap: 32px;
+    }
+
+    .brends__viewButton {
+        padding-bottom: 34px;
+    }
+};
