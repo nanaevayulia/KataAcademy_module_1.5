@@ -74,6 +74,11 @@ button {
     padding-bottom: 66px;
 }
 
+.swiper {
+    width: 240px;
+    overflow: visible;
+}
+
 .swiper-wrapper {
     display: flex;
 }
@@ -90,10 +95,6 @@ button {
     align-items: center;
     flex-shrink: 0;
     box-sizing: border-box;
-}
-
-.swiper-slide:nth-child(1) {
-    margin-left: 16px;
 }
 
 .swiper-slide::after {

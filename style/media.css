@@ -21,16 +21,16 @@
         overflow: hidden;
         margin: 24px 0;
     }
-
-    .swiper-slide:nth-child(1) {
-        margin-left: 0;
-    }
-
+    
     .swiper-slide::after {
         content: "";
         background: url(../images/go.svg) no-repeat;
         width: 40px;
         height: 40px;
+    }
+
+    .swiper-pagination {
+        display: none;
     }
 
     .brends__viewButton[hidden] {
