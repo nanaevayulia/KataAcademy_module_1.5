@@ -18,10 +18,14 @@
 
     .brends__swiper {
         height: 160px;
-        overflow: hidden;
         margin: 24px 0;
     }
-    
+
+    .swiper {
+        width: auto;
+        overflow: hidden;
+    }
+
     .swiper-slide::after {
         content: "";
         background: url(../images/go.svg) no-repeat;
