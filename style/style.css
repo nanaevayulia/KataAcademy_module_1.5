@@ -59,6 +59,7 @@ button {
 .brends {
     background-color: #F8F8F8;
     letter-spacing: -0.2px;
+    position: relative;
 }
 
 .brends__title {
@@ -77,6 +78,8 @@ button {
 .swiper {
     width: 240px;
     overflow: visible;
+    margin-left: 16px;
+    position: static;
 }
 
 .swiper-wrapper {
