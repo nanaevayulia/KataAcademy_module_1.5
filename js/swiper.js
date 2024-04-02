@@ -1,13 +1,19 @@
-const swiper = new Swiper(".brends__swiper", {
-  // Optional parameters
-  spaceBetween: 16,
-  loop: true,
+if (document.body.matchMedia < 768) {
+  swiper.init(swiper);
+}
 
-  // Pagination
+const swiper = new Swiper(".brends__swiper", {
+  spaceBetween: 16,
+  width: 240,
+
   pagination: {
     el: ".swiper-pagination",
-    type: "bullets",
     clickable: true,
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewPort: true,
   },
 
   on: {

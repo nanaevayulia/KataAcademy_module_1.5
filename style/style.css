@@ -59,7 +59,6 @@ button {
 .brends {
     background-color: #F8F8F8;
     letter-spacing: -0.2px;
-    position: relative;
     overflow: hidden;
 }
 
@@ -77,18 +76,10 @@ button {
 }
 
 .swiper {
-    width: 240px;
-    overflow: visible;
-    margin-left: 16px;
-    position: static;
-}
-
-.swiper-wrapper {
-    display: flex;
+    padding-left: 16px;
 }
 
 .swiper-slide {
-    width: 240px !important;
     height: 72px;
     padding: 16px;
     border: 1px solid #EAEAEA;
